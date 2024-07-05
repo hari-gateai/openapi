@@ -1,0 +1,47 @@
+openapi: 3.0.0
+
+info:
+  version: 1.0.0
+  title: uc
+  description: 'testing'
+  
+servers:
+  - url: https://alpha.prod-api.gateai.co/
+    description: Official JSON interface
+
+paths:
+  /superadmin/tenant/tenant-dashboard: 
+    get: 
+      summary: ""
+      description: ""
+      parameters: 
+        - 
+          name: "accept"
+          type: "string"
+          in: "header"
+          description: ""
+          required: true
+        - 
+          name: "authorization"
+          type: "string"
+          in: "header"
+          description: ""
+          required: true
+        - 
+          name: "tenant"
+          type: "string"
+          in: "query"
+          description: ""
+          required: true
+        - 
+          name: "filter"
+          type: "string"
+          in: "query"
+          description: ""
+          required: true
+        - 
+          name: "filter\\"
+          type: "string"
+          in: "query"
+          description: ""
+          required: true
